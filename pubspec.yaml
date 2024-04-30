@@ -1,6 +1,6 @@
 name: expense_tracker_flutter
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: 'none'  # Ensures the package is not accidentally published to pub.dev
 version: 0.1.0
 
 environment:
@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^1.10.0  # Needed for any Firebase service
+  firebase_auth: ^3.3.4  # Firebase authentication
+  cloud_firestore: ^3.1.5  # Firestore database
+  provider: ^6.0.1  # State management
 
 dev_dependencies:
   flutter_test:
